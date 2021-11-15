@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/CorreccionProyecto/CalcuRaBraLena.cpp
+iostream
+-
+Savest.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/CorreccionProyecto/Savest.h
+string
+-
+vector
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/CorreccionProyecto/Savest.cpp
+iostream
+-
+Savest.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/CorreccionProyecto/Savest.h
+string
+-
+vector
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/CorreccionProyecto/Savest.h
+string
+-
+
