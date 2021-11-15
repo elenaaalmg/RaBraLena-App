@@ -1,5 +1,5 @@
 # RaBraLena-App
-La mejor aplicacion de finanzas de tlatelolco 
+La mejor aplicacion de finanzas de Metepec
 
 ### Notas ### 
 
@@ -26,14 +26,19 @@ trabajo.
 ### Tareas actuales ### (Ultima revision: Miercoles 20 de Octubre del 2021)
 
 	Elena
+
 - Convertir Ahorros() e Inversion() en una sola clase con su respectivo .h y .cpp
 - Corregir errores de los ciclos de las susodichas funciones
 
 	Raul
+
 - Investigar como se aplican los impuestos en Mexico SOBRE EL INGRESO. Esta investigacion es solo sobre temas practicos que podamos 
 agregar al proyecto.
 - Crear una clase con su respectivo .h y .cpp que calcule el dinero que tienes que pagar de impuestos a partir del codigo YA HECHO. 
 
 	Brayan
+
 - Agregar funcionalidad para acceso de tarjetas de credito y debito
 - Agregar funcionalidad para agregar fechas reales e implementarlas en el programa 
+- Agregar funcionalidad para terminar el programa
+- Revisar la posibilidad de hacer valores default 
