@@ -141,5 +141,5 @@ int Interconectividad(){
 void IngresarUsuario(){
     /* Fecha Hoy;
     */
-    
+
 }

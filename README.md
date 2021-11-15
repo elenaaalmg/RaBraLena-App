@@ -23,18 +23,21 @@ trabajo.
 3. Tu codigo debe estar bien organizado en la carpeta con tu nombre
 4. Intenta escribir todo tu codigo en ingles y comentarios en español. 
 
-### Tareas actuales ### (Ultima revision: Miercoles 20 de Octubre del 2021)
+### Tareas actuales ### (Ultima revision: Domingo 14 de noviembre del 2021)
 
-	Elena
+	Elena <3
 
 - Convertir Ahorros() e Inversion() en una sola clase con su respectivo .h y .cpp
 - Corregir errores de los ciclos de las susodichas funciones
+- Investigar HTML, CSS y Markdown para crear una interfaz grafica. 
 
-	Raul
+	Raul <3
 
 - Investigar como se aplican los impuestos en Mexico SOBRE EL INGRESO. Esta investigacion es solo sobre temas practicos que podamos 
 agregar al proyecto.
 - Crear una clase con su respectivo .h y .cpp que calcule el dinero que tienes que pagar de impuestos a partir del codigo YA HECHO. 
+- Hacer una funcion para el cambio de moneda entre mxn, usd y euro.
+- Investigar el INN y el BIN de todos los bancos importantes de Mexico para exportarlos en un .csv. 
 
 	Brayan
 
