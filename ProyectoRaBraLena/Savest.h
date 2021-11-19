@@ -1,7 +1,3 @@
-//
-// Created by elena on 13/11/2021.
-//
-
 #ifndef PROYECTO2_SAVEST_H
 #define PROYECTO2_SAVEST_H
 #include <string>
