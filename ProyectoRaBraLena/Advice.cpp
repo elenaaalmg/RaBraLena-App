@@ -1,7 +1,3 @@
-//
-// Created by elena on 18/11/2021.
-//
-
 /* Las funiones de este archivo .cpp, perteneciente a la clase Advice, tienen la misma metodología que algunas funciones
  * de la clase Finanzas, sin embargo, en esta clase se le recomienda al usuario como organizar su dinero*/
 
