@@ -1,7 +1,3 @@
-//
-// Created by elena on 18/11/2021.
-//
-
 #ifndef PROYECTO2_FINANZAS_H
 #define PROYECTO2_FINANZAS_H
 #include <string>
