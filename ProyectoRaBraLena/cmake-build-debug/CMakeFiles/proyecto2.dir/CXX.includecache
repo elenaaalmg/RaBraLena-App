@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Advice.cpp
+Advice.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Advice.h
+Savest.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Savest.h
+iostream
+-
+vector
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Advice.h
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/CalcuRaBraLena.cpp
+iostream
+-
+Finanzas.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Finanzas.h
+Advice.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Advice.h
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Finanzas.cpp
+Finanzas.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Finanzas.h
+Savest.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Savest.h
+iostream
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Finanzas.h
+string
+-
+vector
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Savest.cpp
+iostream
+-
+Savest.h
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Savest.h
+string
+-
+vector
+-
+
+C:/Users/elena/OneDrive/Documentos/UNAM/Computacion I/ProyectoRaBraLena/Savest.h
+string
+-
+
