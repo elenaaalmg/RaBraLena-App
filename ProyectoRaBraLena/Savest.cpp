@@ -1,7 +1,3 @@
-//
-// Created by elena on 13/11/2021.
-//
-
 #include <iostream>
 #include "Savest.h"
 #include <string>
