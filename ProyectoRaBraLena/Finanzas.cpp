@@ -95,7 +95,8 @@ void Finanzas::Savings(float &DineroTotal){
     }
 }
 
-// Esta función calcula los impuestos a pagar dependiendo de tus ingresos (sin funcionalidad por el momento)
+/*Esta función calcula los impuestos a pagar dependiendo de tus ingresos. Aún no tiene funcionalidad en el código
+ * principal, sin embargo, se espera mejorarla e implementarla más adelante en el prpyecto final*/
 void Finanzas::Impuestos() {
     cout << "Este calculadora calcula tus impuestos \n";
 
