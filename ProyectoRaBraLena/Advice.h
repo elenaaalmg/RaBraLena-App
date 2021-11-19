@@ -1,7 +1,3 @@
-//
-// Created by elena on 18/11/2021.
-//
-
 #ifndef PROYECTO2_ADVICE_H
 #define PROYECTO2_ADVICE_H
 
