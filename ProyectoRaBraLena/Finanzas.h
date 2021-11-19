@@ -28,6 +28,7 @@ public:
     void Impuestos();
 };
 
+//Estas estructuras aún no son implementadas en el código principal, se espera incluirlas en el proyecto final
 struct Fecha{
     int dia = 00;
     int mes = 00;
