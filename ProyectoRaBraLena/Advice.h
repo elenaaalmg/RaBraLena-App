@@ -6,10 +6,17 @@ class Advice {
 private:
     char decision;
     int numFund;
+    float expenses;
+    float invest;
+    float save;
+    float entertainment;
 public:
-    void suggestionLlenarSobre(float &expenses, float &invest, float &save);
-    void suggestionInvestments(float &expenses, float &invest, float &save);
-    void suggestionSavings(float &expenses, float &invest, float &save);
+    void suggestionExpenses(float &expenses, float &invest, float &save, float &entertainment);
+    void suggestionLeisure(float &expenses, float &invest, float &save, float &entertainment);
+    void suggestionInvestments(float &expenses, float &invest, float &save, float &entertainment);
+    void suggestionSavings(float &expenses, float &invest, float &save, float &entertainment);
+    int Interconectividad(float &expenses, float &invest, float &save, float &entertainment);
+    void IngresarUsuario();
 };
 
 

@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+
 //Inicialización de variables
 Finanzas::Finanzas(){
     decision = ' ';
@@ -10,8 +11,7 @@ Finanzas::Finanzas(){
     b = 0;
     iter = 0;
     numFund = 0;
-    numOne = 1;
-    total = 1;
+    DineroTotal = 0;
 };
 
 //esta función llena los sobres, que corresponden a los gastos del usuario
@@ -91,28 +91,47 @@ void Finanzas::Savings(float &DineroTotal){
     }
 }
 
-/*Esta función calcula los impuestos a pagar dependiendo de tus ingresos. Aún no tiene funcionalidad en el código
- * principal, sin embargo, se espera mejorarla e implementarla más adelante en el prpyecto final*/
-void Finanzas::Impuestos() {
-    cout << "Este calculadora calcula tus impuestos \n";
 
-    cout << "Ingreso ";
-    cin >>  numOne;
+// Esta función calcula los impuestos a pagar dependiendo de tus ingresos
+void Finanzas::Impuestos(float &DineroTotal) {
 
+    if (DineroTotal > 1, 0 < DineroTotal && DineroTotal < 578){ DineroTotal *= .9808;}
+    if (DineroTotal > 1, 578 < DineroTotal && DineroTotal < 4910){ DineroTotal *= .936;}
+    if (DineroTotal > 1, 4910 < DineroTotal && DineroTotal < 8629){ DineroTotal *= .8912;}
+    if (DineroTotal > 1, 8269 < DineroTotal && DineroTotal < 10031){ DineroTotal *= .84;}
+    if (DineroTotal > 1, 10031 < DineroTotal && DineroTotal < 12009){ DineroTotal *= .8208;}
+    if (DineroTotal > 1, 12009 < DineroTotal && DineroTotal < 24222){ DineroTotal *= .7864;}
+    if (DineroTotal > 1, 24222 < DineroTotal && DineroTotal < 38177){ DineroTotal *= .7648;}
+    if (DineroTotal > 1, 38177 < DineroTotal && DineroTotal < 72887){ DineroTotal *= .70;}
+    if (DineroTotal > 1, 72887 < DineroTotal && DineroTotal < 97183){ DineroTotal *= .68;}
+    if (DineroTotal > 1, 97183 < DineroTotal && DineroTotal < 291550){ DineroTotal *= .66;}
+    if (DineroTotal > 1, 291550 < DineroTotal && DineroTotal < 1000000000){ DineroTotal *= .65;}
 
-    if (numOne>1,0 < numOne && numOne<578){total= numOne *.9808;}
-    if (numOne>1,578 < numOne && numOne<4910){total= numOne *.936;}
-    if (numOne>1,4910 < numOne && numOne<8629){total= numOne *.8912;}
-    if (numOne>1,8269 < numOne && numOne<10031){total= numOne *.84;}
-    if (numOne>1,10031< numOne && numOne<12009){total= numOne *.8208;}
-    if (numOne>1,12009 < numOne && numOne<24222){total= numOne *.7864;}
-    if (numOne>1,24222 < numOne && numOne<38177){total= numOne *.7648;}
-    if (numOne>1,38177< numOne && numOne<72887){total= numOne *.70;}
-    if (numOne>1,72887 < numOne && numOne<97183){total= numOne *.68;}
-    if (numOne>1,97183< numOne && numOne<291550){total= numOne *.66;}
-    if (numOne>1,291550 < numOne && numOne<1000000000){total= numOne *.65;}
+    cout << "Substranting taxes, you have $ " << DineroTotal << endl;
+}
 
 
-    cout << "Resultado ya con impuestos: " << endl;
-    cout    << total << endl;
+// Esta función vincula las demás funciones del programa
+int Finanzas::Interconectividad(float &DineroTotal){
+    cout << "Do you need anything more?\nUser settings (1)\nInvestments (2)\nSavings (3)\nFinish (4)\n";
+    cin >> decision;
+    switch (decision) {
+        case '1':
+            IngresarUsuario();
+            case '2':
+                Investments(DineroTotal);
+                case '3':
+                    Savings(DineroTotal);
+                    case '4':
+                        break;
+                    default:
+                        break;
+    }
+    return 0;
+}
+
+
+void Finanzas::IngresarUsuario(){
+    /* Fecha Hoy;
+    */
 }

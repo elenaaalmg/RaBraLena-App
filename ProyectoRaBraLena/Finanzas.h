@@ -13,15 +13,16 @@ private:
     double b;
     int iter;
     int numFund;
-    int numOne;
-    int total;
+    float DineroTotal;
 
 public:
     Finanzas();
     void LlenarSobre(float &DineroTotal);
     void Investments(float &DineroTotal);
     void Savings(float &DineroTotal);
-    void Impuestos();
+    void Impuestos(float &DineroTotal);
+    int Interconectividad(float &DineroTotal);
+    void IngresarUsuario();
 };
 
 //Estas estructuras aún no son implementadas en el código principal, se espera incluirlas en el proyecto final

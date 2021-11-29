@@ -8,7 +8,7 @@
 using namespace std;
 
 
-void Advice::suggestionLlenarSobre(float &expenses, float &invest, float &save){
+void Advice::suggestionExpenses(float &expenses, float &invest, float &save, float &entertainment){
     vector<string> enve_names;
     vector<double> envelopes;
     string a;
@@ -28,18 +28,52 @@ void Advice::suggestionLlenarSobre(float &expenses, float &invest, float &save){
     cin >> decision;
     if (decision == 'Y' && expenses > envelopes[iter]){
         iter++;
-        suggestionLlenarSobre(expenses, invest, save);
+        suggestionExpenses(expenses, invest, save, entertainment);
     }
     else if (expenses < envelopes[iter]){
         cout << "Sorry, for the moment you do not have enough money\n";
     }
 
     if (decision == 'N'){
-        suggestionInvestments(expenses, invest, save);
+        suggestionLeisure(expenses, invest, save, entertainment);
     }
 }
 
-void Advice::suggestionInvestments(float &expenses, float &invest, float &save) {
+
+void Advice::suggestionLeisure(float &expenses, float &invest, float &save, float &entertainment) {
+
+    vector<string> enve_names;
+    vector<double> envelopes;
+    string a;
+    double b;
+    int iter = 0;
+
+    cout << "You have $ " << entertainment << " to spend on your leisure activities\n";
+    cout << "Enter the name of your envelope\n";
+    cin >> a;
+    enve_names.push_back(a);
+    cout << "Enter the total sum you want to add to this envelope\n";
+    cin >> b;
+    envelopes.push_back(b);
+    entertainment -= envelopes[iter];
+
+    cout << "Do you want to create a new envelope? (Y for yes, N for no)" << endl;
+    cin >> decision;
+    if (decision == 'Y' && entertainment > envelopes[iter]){
+        iter++;
+        suggestionExpenses(expenses, invest, save, entertainment);
+    }
+    else if (entertainment < envelopes[iter]){
+        cout << "Sorry, for the moment you do not have enough money\n";
+    }
+
+    if (decision == 'N'){
+        suggestionInvestments(expenses, invest, save, entertainment);
+    }
+}
+
+
+void Advice::suggestionInvestments(float &expenses, float &invest, float &save, float &entertainment) {
     Savest I;
     cout << "Do you want to invest? (Y for yes, N for no)" << endl;
     cin >> decision;
@@ -59,11 +93,12 @@ void Advice::suggestionInvestments(float &expenses, float &invest, float &save) 
         }
     }
     if (decision == 'N'){
-        suggestionSavings(expenses, invest, save);
+        suggestionSavings(expenses, invest, save, entertainment);
     }
 }
 
-void Advice::suggestionSavings(float &expenses, float &invest, float &save) {
+
+void Advice::suggestionSavings(float &expenses, float &invest, float &save, float &entertainment){
     Savest S;
     cout << "Do you want to save? (Y for yes, N for no)" << endl;
     cin >> decision;
@@ -86,4 +121,28 @@ void Advice::suggestionSavings(float &expenses, float &invest, float &save) {
     if (decision == 'N'){
         int Interconectividad();
     }
+}
+
+int Advice::Interconectividad(float &expenses, float &invest, float &save, float &entertainment){
+    cout << "Do you need anything more?\nUser settings (1)\nInvestments (2)\nSavings (3)\nFinish (4)\n";
+    cin >> decision;
+    switch (decision) {
+        case '1':
+            IngresarUsuario();
+            case '2':
+                suggestionInvestments(expenses, invest, save, entertainment);
+                case '3':
+                    suggestionSavings(expenses, invest, save, entertainment);
+                    case '4':
+                        break;
+                    default:
+                        break;
+    }
+    return 0;
+}
+
+
+void Advice::IngresarUsuario(){
+    /* Fecha Hoy;
+    */
 }
